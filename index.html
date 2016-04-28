@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue - Todo List</title>
+  <link rel="stylesheet" href="todo.css" />
+</head>
+<body>
+  <component :is="currentView"></component>
+  <ul>
+    <li><label><input type="radio" name='page' value='todo' v-model='currentView'> Home</label></li>
+    <li><label><input type="radio" name='page' value='about' v-model='currentView'> About</label></li>
+  </ul>
+
+  <script src='./vue.js'></script>
+  <script src='./todo.js'></script>
+</body>
+</html>
